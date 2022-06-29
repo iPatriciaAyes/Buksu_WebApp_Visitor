@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Page</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script type="text/javascript" src="js/instascan.min.js"></script>
+		<!-- DataTables -->
+		<link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+		<link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style>
+		#divvideo{
+			 box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+		}
+		#myVideo {
+			width: 100vw;
+			height: 100vh;
+			object-fit: cover;
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			z-index: -1;
+			filter: blur(4px);
+			-webkit-filter: blur(4px);
+		}
+		</style>
+</head>
+
+<body >
+	<video autoplay muted loop id="myVideo">
+		<source src="img/buksu.mp4" type="video/mp4">
+	  </video>
+	<div class="main" >
+		<nav class="navbar" style="background:#eee">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#" style = "color:#0D1983; font-family:Lucida Console"> <i class="glyphicon glyphicon-qrcode"></i>  BukSU Visitor Log Monitoring</a>
+			</div>
+		<ul class="nav navbar-nav">
+			  <li class="active"><a href="#" style = "color:#0D1983;font-family:Courier"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style = "color:#0D1983;font-family:Courier "><span class="glyphicon glyphicon-cog"></span> Access <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#"><span class="glyphicon glyphicon-user"style = "color:#0D1983;font-family:Courier " ></span> Visitor Dashboard</a></li>
+				  <li><a href="#"><span class="glyphicon glyphicon-plus-sign"style = "color:#0D1983;font-family:Courier " ></span> Add New Visitor</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#" style = "color:#0D1983;font-family:Courier "><span class="glyphicon glyphicon-align-justify"></span> Data Log</a></li>
+			  <li><a href="#" style = "color:#0D1983;font-family:Courier "><span class="glyphicon glyphicon-time"></span> Scan a QR-Code</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			  <li><a href="select.php" style = "color:#0D1983;font-family:Courier "><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+		  </div>
+		</nav>
+	<div className='home' style='font-family:Kaushan Script; color:White; font-size: 300px; text-align: center; padding: 10px 95px; margin: 4px 2px;'>
+		<h1 style="margin-top:100px">Bukidnon State University Visitor Log Monitoring</h1>
+		
+	</div>
+	<img src="img/buksu.png" alt="BUKSU LOGO" style="display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;">
+	</div>
+
+	
+</body>
+</html>
